@@ -1,11 +1,11 @@
 Meeting Minder - Speech-to-Summary Browser Extension using Deep Learning
 
 Team Members:
-- Keerthana Amalanathan Valarmathi (C0895321)
-- Priyanka Kothapalli (C0894988)
-- Thirumalan Sathananthan (C0902020)
-- Sai Kiran Pilli (C0892418)
-- Ashok Kumar (C0894469)
+- Keerthana Amalanathan Valarmathi (Keerthana-Amalanathan)
+- Priyanka Kothapalli (priyankaa-k)
+- Thirumalan Sathananthan 
+- Sai Kiran Pilli (1999saki)
+- Ashok Kumar 
 
 
 Project Description
