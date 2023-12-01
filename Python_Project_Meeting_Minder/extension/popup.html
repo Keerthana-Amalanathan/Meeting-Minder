@@ -1,0 +1,38 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (unchanged) ... -->
+    <link rel="stylesheet" href="runtime/pyscript.css"/>
+</head>
+<body style="width: 20rem;
+  height: 17rem;
+  background: lightblue;">
+<h1>Meeting Minder Final</h1>
+<button id="startRecording">Start Recording</button>
+<button id="stopRecording" disabled>Stop Recording</button>
+<div id="feedback"></div>
+<div id="mailing" style="display:none">
+    <h1>Add Email ids to send MOM</h1>
+
+    <label for="inputText">To : </label>
+    <input type="text" id="inputText" onkeydown="checkEnter()">
+    <span id="error-message" class="error"></span>
+    <br><br>
+    <div id="output-container">
+        <div id="emails" style="outline: auto;width: 200px;height: 100px;overflow:auto"></div>
+        <!-- Output container for displaying added inputs -->
+    </div>
+    <br><br>
+    <button id="sendMail">Send Mail</button>
+</div>
+
+
+<!-- New div for displaying feedback -->
+
+<!-- Include the locally stored Socket.IO script -->
+<script src="socket.io.min.js"></script>
+<!-- Include your other scripts here -->
+<script src="popup.js"></script>
+</body>
+</html>

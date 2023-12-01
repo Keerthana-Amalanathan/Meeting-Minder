@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Meeting Minder",
+  "description": "Summarize the meeting",
+  "version": "2.0",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "permissions": ["activeTab", "nativeMessaging", "notifications", "tabs", "storage", "clipboardWrite"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+L",
+        "mac": "Alt+L"
+      },
+      "description": "Make a go link for URL in address bar"
+    },
+    "performPythonFunction": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Perform Python Function"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["socket.io.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-eval';"
+  }
+}
