@@ -69,7 +69,7 @@ feedbackDiv.innerText = "Recording Started..."
 
     stopRecordingButton.addEventListener('click', function () {
         console.log('Recording stopped...');
-        feedbackDiv.innerText = "Recording Stopping..."
+        feedbackDiv.innerText = "Recording Stopped. Converting audio to text is in progress..."
 
         socket.send(JSON.stringify({ action: 'stopRecording' }));
 startRecordingButton.setAttribute('disabled', 'True')
@@ -87,6 +87,7 @@ startRecordingButton.setAttribute('disabled', 'True')
     });
 
     socket.addEventListener('message', function (event) {
+    console.log("message recieved lalalal: ", event)
         const data = JSON.parse(event.data);
         console.log('Received message from server:', data);
 
@@ -113,6 +114,10 @@ startRecordingButton.setAttribute('disabled', 'True')
                 mailingDiv.style.display ='none'
                 startRecordingButton.removeAttribute('disabled')
                 stopRecordingButton.setAttribute('disabled', 'True')
+
+                setTimeout(function() {
+                feedbackDiv.innerText = '';
+                                  }, 3000);
                 }
 
 
@@ -135,7 +140,7 @@ startRecordingButton.setAttribute('disabled', 'True')
 
     // Display the text content (you can modify this part based on your requirements)
     console.log(textContentArray);
-    return textContentArray.join(', ');
+    return textContentArray;
 }
 
 });
