@@ -54,7 +54,7 @@ Our project will deliver a functional browser extension for recording, summarizi
 
 Team Responsibilities:
 
-- Keerthana Amalanathan Valarmathi: Project planning, text summarization model building, weekly report submission.
+- Keerthana Amalanathan Valarmathi: Project planning, text summarization model building, Integration with email services, weekly report submission.
 - Priyanka Kothapalli: Design of browser extension, text summarization model building, weekly report creation.
 - Thirumalan Sathananthan: Speech recording and storage, text summarization model building, final presentation and demonstration.
 - Sai Kiran Pilli: Speech-to-text conversion, text summarization model building, final presentation and demonstration.
